@@ -1,0 +1,10 @@
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (1, 'Juan', 'Pérez', 'juan.perez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (2, 'María', 'Gómez', 'maria.gomez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (3, 'Carlos', 'Rodríguez', 'carlos.rodriguez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (4, 'Laura', 'Fernández', 'laura.fernandez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (5, 'Alejandro', 'López', 'alejandro.lopez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (6, 'Carmen', 'Martínez', 'carmen.martinez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (7, 'Pedro', 'García', 'pedro.garcia@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (8, 'Ana', 'Sánchez', 'ana.sanchez@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (9, 'David', 'Díaz', 'david.diaz@example.com', '2024-03-06');
+INSERT INTO clients (id, name, surname, email, created_at) VALUES (10, 'Elena', 'Hernández', 'elena.hernandez@example.com', '2024-03-06');
