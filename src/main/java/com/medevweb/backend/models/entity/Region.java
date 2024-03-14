@@ -2,6 +2,7 @@ package com.medevweb.backend.models.entity;
 
 import java.io.Serializable;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,18 +15,22 @@ public class Region implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY) // AUTOINCREMENTAL
-	private Long id;
+	@Column(name = "region_id")
+	private Long regionId;
 	
+	public Long getRegionId() {
+		return regionId;
+	}
+
+	public void setRegionId(Long regionId) {
+		this.regionId = regionId;
+	}
+
+
+
 	private String name;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
+	
 	public String getName() {
 		return name;
 	}

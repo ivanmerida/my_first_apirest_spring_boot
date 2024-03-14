@@ -160,7 +160,7 @@ public class ClientRestController {
 			currentClient.setSurname(client.getSurname());
 			currentClient.setEmail(client.getEmail());
 			currentClient.setCreatedAt(client.getCreatedAt());
-//			currentClient.setRegion(client.getRegion());
+			currentClient.setRegion(client.getRegion());
 
 			updatedClient = clientService.save(currentClient);
 

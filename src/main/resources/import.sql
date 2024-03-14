@@ -1,3 +1,13 @@
+INSERT INTO regions (region_id, name) VALUES (1, 'América del Norte');
+INSERT INTO regions (region_id, name) VALUES (2, 'América del Sur');
+INSERT INTO regions (region_id, name) VALUES (3, 'Europa');
+INSERT INTO regions (region_id, name) VALUES (4, 'África');
+INSERT INTO regions (region_id, name) VALUES (5, 'Asia');
+INSERT INTO regions (region_id, name) VALUES (6, 'Oceanía');
+INSERT INTO regions (region_id, name) VALUES (7, 'Antártida');
+INSERT INTO regions (region_id, name) VALUES (8, 'Medio Oriente');
+INSERT INTO regions (region_id, name) VALUES (9, 'Sudeste Asiático');
+INSERT INTO regions (region_id, name) VALUES (10, 'América Central');
 INSERT INTO clients ( name, surname, email, created_at, region_id) VALUES ('Juan', 'Pérez', 'juan.perez@example.com', '2024-03-06', 1);
 INSERT INTO clients (name, surname, email, created_at, region_id) VALUES ('María', 'Gómez', 'maria.gomez@example.com', '2024-03-06',2);
 INSERT INTO clients (name, surname, email, created_at, region_id) VALUES ('Carlos', 'Rodríguez', 'carlos.rodriguez@example.com', '2024-03-06',3);

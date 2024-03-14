@@ -46,12 +46,12 @@ public class Client implements Serializable{
 	}
 	
 	private String image;
-	/*
+
 	@NotNull
 	@ManyToOne(fetch=FetchType.LAZY) // MUCHOS CLIENTES TENDRA UNA MISMA REGION  LAZY = PARA LA CARGA PERESOZA
 	@JoinColumn(name="region_id")
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // PARA IGNORAR ESTAS PROPIEDADES Y QUE NO LANCE UN ERROR +	// PORQUE ANDAMOS USANDO LAZY
-	private Region region;*/
+	private Region region;
 	
 	
 	public String getImage() {
@@ -91,12 +91,12 @@ public class Client implements Serializable{
 		this.createdAt = createdAt;
 	}
 		
-//	public Region getRegion() {
-//		return region;
-//	}
-//	public void setRegion(Region region) {
-//		this.region = region;
-//	}
+	public Region getRegion() {
+		return region;
+	}
+	public void setRegion(Region region) {
+		this.region = region;
+	}
 
 	/**
 	 * 
