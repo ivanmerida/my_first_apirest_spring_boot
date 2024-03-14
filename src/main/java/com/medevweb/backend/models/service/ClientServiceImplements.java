@@ -3,11 +3,14 @@ package com.medevweb.backend.models.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.medevweb.backend.models.dao.IClientDao;
 import com.medevweb.backend.models.entity.Client;
+import com.medevweb.backend.models.entity.Region;
 
 
 @Service
@@ -24,6 +27,13 @@ public class ClientServiceImplements implements IClientService{
 	public List<Client> findAll() {
 		// TODO Auto-generated method stub
 		return (List<Client>) clientDao.findAll();
+	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public Page<Client> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return clientDao.findAll(pageable);
 	}
 
 	@Override
@@ -46,5 +56,14 @@ public class ClientServiceImplements implements IClientService{
 		// TODO Auto-generated method stub
 		clientDao.deleteById(id);
 	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public List<Region> findAllRegions() {
+		// TODO Auto-generated method stub
+		return clientDao.findAllRegions();
+	}
+
+	
 
 }
